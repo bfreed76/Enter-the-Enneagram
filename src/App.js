@@ -1,22 +1,29 @@
-import logo from './logo.svg';
+import enneagram from './enneagram.png';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <h1>Welcome to the Enneagram</h1>
+        <div className="textbox">
+        <p>The Enneagram is a model of the human psyche that describes 
+          how people interact with the world. It uses behavioral patterns to 
+          classify nine interconnected personality types. Each type is defined by
+          a particular core belief that anchors your deepest motivations and fears, 
+          and shapes your woldview.</p>
+          <p>Understanding your Enneagram type (enneatype) can help you better understand your
+          own attitudes and habits, and improve your performance under stress. Knowing
+          others' enneatypes can provide a foundation for building compassion and
+          empathy.
+          </p>
+          <img id="enne1" src={enneagram}
+            alt="enneagram symbol"></img>
+          <h3>Identify your enneatype in about five minutes with this simplified
+            Enneagram Instute-approved type indicator. When you finish, a description of your
+            of your primary personality type will be given with links for futher exploration. 
+          </h3>
+        </div>
       </header>
     </div>
   );
