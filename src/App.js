@@ -1,10 +1,17 @@
 import enneagram from './enneagram.png';
-import React, { Component, Redirect } from 'react';
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Instructions from './Components/Instructions';
 import './index.css';
 
 
 class App extends Component {
+
+  handleClick = () => {
+    // console.log("clicked")
+    
+  }
+
   render() {
     return (
     <div className="App">
@@ -22,11 +29,14 @@ class App extends Component {
           </p>
           <img id="enne1" src={enneagram}
             alt="enneagram symbol"></img>
-          <h3>Identify your enneatype in about five minutes with this simplified
+          <p>Identify your enneatype in about five minutes with this simplified
             Enneagram Instute-approved type indicator. When you finish, a description of your
             of your primary personality type will be given with links for futher exploration. 
-          </h3>
-          <button className='button' onClick={this.handleClick}>Begin</button>
+          </p>
+          {/* <button className='button' <Link to='/Instructions'>test</Link>}>Begin</button> */}
+          <button className="button">
+          <Link to='/Instructions'>Next</Link>
+          </button>
         </div>
     </div>
     );

@@ -1,10 +1,11 @@
 {
-    "testResults": [
+    "results": [
       {
         "id": 1,
         "name": "Brinton",
         "type": 7
-        
+
       }
-    ]
+    ],
+    "questions": []
 }
