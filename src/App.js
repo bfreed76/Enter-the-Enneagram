@@ -1,10 +1,13 @@
 import enneagram from './enneagram.png';
-import './App.css';
+import React, { Component, Redirect } from 'react';
+import Instructions from './Components/Instructions';
+import './index.css';
 
-const App = () => {
-  return (
+
+class App extends Component {
+  render() {
+    return (
     <div className="App">
-      <header className="App-header">
       <h1>Welcome to the Enneagram</h1>
         <div className="textbox">
         <p>The Enneagram is a model of the human psyche that describes 
@@ -23,10 +26,11 @@ const App = () => {
             Enneagram Instute-approved type indicator. When you finish, a description of your
             of your primary personality type will be given with links for futher exploration. 
           </h3>
+          <button className='button' onClick={this.handleClick}>Begin</button>
         </div>
-      </header>
     </div>
-  );
+    );
+  }
 }
 
 export default App;
