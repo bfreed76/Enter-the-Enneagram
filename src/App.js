@@ -7,11 +7,6 @@ import './index.css';
 
 class App extends Component {
 
-  handleClick = () => {
-    // console.log("clicked")
-    
-  }
-
   render() {
     return (
     <div className="App">

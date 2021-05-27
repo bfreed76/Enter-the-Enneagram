@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Instructions from './Components/Instructions'
 import QuestionsContainer from './Containers/QuestionsContainer'
+import Questions from './Components/Questions'
 import Results from './Components/Results'
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
@@ -20,7 +21,10 @@ ReactDOM.render(
             <Link to="instructions">Instructions</Link>
           </li>
           <li>
-            <Link to="questions">QuestionsContainer</Link>
+            <Link to="questionsContainer">QuestionsContainer</Link>
+          </li>
+          <li>
+            <Link to="questions">Questions</Link>
           </li>
           <li>
             <Link to="results">Results</Link>
@@ -30,7 +34,8 @@ ReactDOM.render(
       <Switch>
         <Route exact path="/" component={App} />
         <Route exact path="/instructions" component={Instructions} />
-        <Route exact path="/questions" component={QuestionsContainer} />
+        <Route exact path="/questionsContainer" component={QuestionsContainer} />
+        <Route exact path="/questions" component={Questions} />
         <Route exact path="/results" component={Results} />
       </Switch>
       </div>

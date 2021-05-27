@@ -1,13 +1,16 @@
-import React, { Component } from 'react';
+import React, { Fragment } from 'react';
 
-class Questions extends Component {
+
     
 
-    render() { 
+    const Questions = ({question, nextQuestions, id}) => {
+
         return ( 
-            <h1>Questions</h1>
-         );
-    }
-}
- 
+            <div id={id}>
+               <h2 >{question.text}</h2> 
+               <button name="nextButton" value={question.value} onClick={e => nextQuestions(e)}>Next</button>
+            </div>
+        )
+    }   
+
 export default Questions;
