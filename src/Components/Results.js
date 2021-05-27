@@ -1,16 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 import '../index.css';
 
 
+class Results extends Component {
 
-const Results = ({initialResults}) => {
-    
+
+    render() { 
+
         return ( 
-            <dev>
-                <p>Results</p>
 
-            </dev>
+            <div>
+                <p>Results</p>
+                {console.log("Results", this.props)}
+            </div>
          );
+    }
 }
- 
+
 export default Results;
