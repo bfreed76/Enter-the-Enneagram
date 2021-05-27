@@ -1,9 +1,6 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
-
-    
-
-    const Questions = ({question, nextQuestions, id}) => {
+const Questions = ({question, nextQuestions, id}) => {
 
         return ( 
             <div id={id}>
@@ -11,6 +8,6 @@ import React, { Fragment } from 'react';
                <button name="nextButton" value={question.value} onClick={e => nextQuestions(e)}>Next</button>
             </div>
         )
-    }   
+}   
 
 export default Questions;

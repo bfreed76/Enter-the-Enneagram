@@ -1,19 +1,22 @@
-import React, { Component, useState, useEffect } from 'react';
+import React, { Component } from 'react';
+import { useHistory } from 'react-router-dom';
 import Questions from '../Components/Questions';
-import Questions2 from '../Components/Questions2';
+import Results from '../Components/Results'
 
 class QuestionsContainer extends Component {
     state = { 
         questions: [],
         startingIndex: 0,
-        selectedQuestions: []
+        finished: false,
+        initialResults: [],
+        countedResults: []
      }
 
      componentDidMount(){
          this.fetchQuestions()
      }
 
-     fetchQuestions = () => {
+     fetchQuestions = () => {   //?GETs all Questions
         fetch("http://localhost:3001/questions")
         .then(res => res.json())
         .then(questionsArr => {
@@ -23,37 +26,71 @@ class QuestionsContainer extends Component {
         })
      }
 
-    chooseTwoQuestions = () => {
-        const twoQuestions = this.state.questions.slice(this.state.startingIndex, this.state.startingIndex + 2)
-        (this.state.startingIndex >= 72) ? this.results() : twoQuestions
+    renderTwoQuestions = () => {    //?Slices initial two questions, ends questions when finished
+        const {questions, startingIndex} = this.state   
+        const twoQuestions = questions.slice(startingIndex, startingIndex + 2)
+        return (startingIndex >= 13) ? this.processResults() : twoQuestions
+        //72 is the num of choice
     }
     
-    nextQuestions = (e) => {
-        // console.log("handleNext Worked", e)
-        // need to return the question's value to here, then set it into state and re-render
+    nextQuestions = (e) => {    //?Selects next two questions
         this.setState(prevState => {
             return{
-            startingIndex: prevState.startingIndex + 2,
-            selectedQuestions: [...this.state.selectedQuestions, e.target.value]
+                startingIndex: prevState.startingIndex + 2,
+                initialResults: [...this.state.initialResults, e.target.value]
             }
         })
-        this.chooseTwoQuestions()
+        this.renderTwoQuestions()
     }
 
-    results = () => {
-        console.log(this.state.selectedQuestions)
+    countFreq = (array, value) => array.reduce((a, v) => (v === value ? a + 1 : a), 0);  //?Reduces Results
+    
+
+    processResults = () => {     //?Tallys results and passes them to Results.js; renders Results.js
+        console.log("results working!")
+        const {initialResults, countedResults} = this.state
+            const resultsArr = []
+                resultsArr.push(this.countFreq(initialResults, "a"))
+                resultsArr.push(this.countFreq(initialResults, "b"))
+                resultsArr.push(this.countFreq(initialResults, "c"))
+                resultsArr.push(this.countFreq(initialResults, "d"))
+                resultsArr.push(this.countFreq(initialResults, "e"))
+                resultsArr.push(this.countFreq(initialResults, "f"))
+                resultsArr.push(this.countFreq(initialResults, "g"))
+                resultsArr.push(this.countFreq(initialResults, "h"))
+                resultsArr.push(this.countFreq(initialResults, "i"))
+            this.setState({
+                countedResults: resultsArr
+            })           
+                debugger
+
+        // console.log(this.countFreq(this.state.initialResults, "e"))
+
+        // this.setState({finished: true}) // for if/then render statement
+        // let history = useHistory()
+        // history.pushState("/Results")  //! how to automatically navigate to Results? 
     }
 
     render() { 
-
-        return ( 
+        // let renderComponent
+        // const finished = this.state.finished
+        // if (finished) {
+        //     renderComponent = <Results results={this.state.initialResults}/>
+        //     } else { 
+        //     renderComponent = this.renderTwoQuestions().map(question => <Questions question={question} id={question.id} nextQuestions={this.nextQuestions} />);
+            
+        return(     
             <div>
                 <h1>Select one of the following:</h1>
-                {this.chooseTwoQuestions().map(question => <Questions question={question} id={question.id} nextQuestions={this.nextQuestions} userSelectQuestions={this.userSelectQuestions} />)}
+                {this.renderTwoQuestions().map(question => <Questions question={question} id={question.id} nextQuestions={this.nextQuestions} />)}
                 <hr></hr>
+                <Results initialResults={this.state.initialResults} />
             </div>
-         );
-    }
+            )
+        }
+
+
 }
+    
  
 export default QuestionsContainer;
