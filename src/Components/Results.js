@@ -11,6 +11,22 @@ class Results extends Component {
         finishedCounting: false
     }
 
+
+    // value = this.props.initialResults.map(result => console.log(result))
+
+    countFreqFunction = (array) => {
+        let countedResults2 = {}
+        array.map(val => {
+            countedResults2 = {
+                ...countedResults2,
+                {val}: array.reduce((a, v) => (v === val ? a + 1 : a), 0)
+            }
+        })
+        console.log("results", array)
+        console.log("counted results", countedResults2)
+    }
+  
+
     resultsCount = () => {      //? Sums frequency of each results, turns array into obj
         const {initialResults} = this.props
         const resultsObj = {}
@@ -33,8 +49,8 @@ render() {
         return ( 
             <div>
                 <h2>Your Results</h2>
-                {/* <button onClick={() => this.resultsCount()}>CLICK HERE</button> */}
-                {(this.state.finishedCounting === false) ? this.resultsCount() : <ResultsChart countedResults={this.state.countedResults} />}
+                <button onClick={() => this.countFreqFunction(this.props.initialResults)}>CLICK HERE!!!</button>
+                {/* {(this.state.finishedCounting === false) ? this.resultsCount() : <ResultsChart countedResults={this.state.countedResults} />} */}
                 <ResultsTable />
             </div>
          );
