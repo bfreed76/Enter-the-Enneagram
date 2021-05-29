@@ -1,40 +1,64 @@
-import enneagram from './enneagram.png';
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import Instructions from './Components/Instructions';
+// import reportWebVitals from './reportWebVitals';
+// import ReactDOM from 'react-dom';
+// import App from './App';
 import './index.css';
-
+import React, {Component} from 'react';
+import Home from './Home'
+import Instructions from './Components/Instructions'
+import QuestionsContainer from './Containers/QuestionsContainer'
+import Questions from './Components/Questions'
+import Results from './Components/Results'
+import { BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 
 class App extends Component {
 
-  render() {
+  state = ({
+    initialResults: {}
+  })
+
+  resultsToState = (results) => {
+    console.log('APP', results)
+    this.setState({
+      initialResults: results
+    })
+  }
+
+  render () {
     return (
-    <div className="App">
-      <h1>Welcome to the Enneagram</h1>
-        <div className="textbox">
-        <p>The Enneagram is a model of the human psyche that describes 
-          how people interact with the world. It uses behavioral patterns to 
-          classify nine interconnected personality types. Each type is defined by
-          a particular core belief that anchors your deepest motivations and fears, 
-          and shapes your woldview.</p>
-          <p>Understanding your Enneagram type (enneatype) can help you better understand your
-          own attitudes and habits, and improve your performance under stress. Knowing
-          others' enneatypes can provide a foundation for building compassion and
-          empathy.
-          </p>
-          <img id="enne1" src={enneagram}
-            alt="enneagram symbol"></img>
-          <p>Identify your enneatype in about five minutes with this simplified
-            Enneagram Instute-approved type indicator. When you finish, a description of your
-            of your primary personality type will be given with links for futher exploration. 
-          </p>
-          {/* <button className='button' <Link to='/Instructions'>test</Link>}>Begin</button> */}
-          <button className="button">
-          <Link to='/Instructions'>Next</Link>
-          </button>
-        </div>
-    </div>
-    );
+  <React.StrictMode>
+    <Router>
+      <div>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="instructions">Instructions</Link>
+          </li>
+          <li>
+            <Link to="questionsContainer">QuestionsContainer</Link>
+          </li>
+          <li>
+            <Link to="questions">Questions</Link>
+          </li>
+          <li>
+            <Link to="results">Results</Link>
+          </li>
+        </ul>
+        <hr />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/instructions" component={Instructions} />
+          {/* <Route exact path="/questionsContainer" component={QuestionsContainer} /> */}
+          <Route exact path="/questions" component={Questions} />
+          {/* <Route exact path="/results" render={Results} /> */}
+          <Route exact path='/results' render={(routeProps) => <Results {...routeProps} initialResults={this.state.initialResults} />} />
+          <Route exact path='/questionsContainer' render={(routeProps) => <QuestionsContainer {...routeProps} resultsToState={this.resultsToState} />} />
+        </Switch>
+      </div>
+    </Router>
+  </React.StrictMode>
+    )
   }
 }
 
