@@ -13,8 +13,7 @@ class Results extends Component {
     }
 
     resultsCount = () => {      //? Sums frequency of each results, turns array into obj
-        const {initialResults} = this.props
-        console.log("ONE", initialResults)
+        let initialResults = Array.from(this.props.initialResults)
         const resultsObj = {}
         if(!!initialResults) {
             initialResults.map(result => {
@@ -25,7 +24,6 @@ class Results extends Component {
                 finishedCounting: true
             })
         }
-        console.log("TWO", initialResults, resultsObj)
         }
 
     handleSubmit = (e) => {
@@ -54,7 +52,7 @@ render() {
                         <h1>Your Results</h1> 
                     </div>
                     <div className="column">
-                        <form className="form" onSubmit={this. handleSubmit}>
+                        <form className="form" onSubmit={this.handleSubmit}>
                             <input type="text" placeholder="Your Name" style={{fontSize:20}}></input>
                             <button className="button" style={{fontSize:18}}>Save Your Score</button>
                         </form>

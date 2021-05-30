@@ -7,6 +7,11 @@ import './index.css';
 
 class App extends Component {
 
+  handleClick = () => {
+
+  }
+
+
   render() {
     return (
     <div className="App">
@@ -29,8 +34,8 @@ class App extends Component {
             of your primary personality type will be given with links for futher exploration. 
           </p>
           {/* <button className='button' <Link to='/Instructions'>test</Link>}>Begin</button> */}
-          <button className="button">
-          <Link to='/Instructions'>Next</Link>
+          <button className="button" >
+          <Link to='/Instructions' >Next</Link>
           </button>
         </div>
     </div>

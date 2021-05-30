@@ -26,22 +26,19 @@ class App extends Component {
     return (
   <React.StrictMode>
     <Router>
-      <div>
+      <div className="navbar">
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">Home </Link>
           </li>
           <li>
-            <Link to="instructions">Instructions</Link>
+            <Link to="instructions">| Instructions </Link> 
           </li>
           <li>
-            <Link to="questionsContainer">QuestionsContainer</Link>
+            <Link to="questionsContainer">| Questions </Link>
           </li>
           <li>
-            <Link to="questions">Questions</Link>
-          </li>
-          <li>
-            <Link to="results">Results</Link>
+            <Link to="results">| Results </Link>
           </li>
         </ul>
         <hr />
