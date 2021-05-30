@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-a {
+.links {
   color: black;
   text-decoration: none;
 }
@@ -82,7 +82,7 @@ a {
   font-size: 20px
 }
 
-#blackLink {
+.blackLink {
   color: white;
   font-weight: bold
 }
@@ -93,21 +93,25 @@ a {
 
 .column {
   width: 800px;
+  margin-left: 2%
 } 
 
 .form {
   margin-top: 2.8%;
-  /* background-color: rgba(75,192,192,0.8) */
 } 
 
 small {
   color:rgb(148, 139, 139)
 }
 
-li {
+.li {
   display: inline
 }
 
 .navbar {
-  /* background-color:rgb(161, 186, 219) */
+  display: inline
+}
+
+.typeLetter {
+  font-weight: bold
 }

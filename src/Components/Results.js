@@ -27,7 +27,6 @@ class Results extends Component {
         }
 
     handleSubmit = (e) => {
-        console.log("HANDLE SUBMIT", e.target.firstChild.value)
         e.preventDefault() 
         let name = e.target.firstChild.value
         let request = {
@@ -63,7 +62,7 @@ render() {
                     {(this.state.finishedCounting === false) ? this.resultsCount() : <ResultsChart className="chart" countedResults={this.state.countedResults} />}
                 </div>
                     <ResultsTable />
-                    <p>For more information on the Enneagram, your Enneatype, or to take the full 144-question Riso-Hudson Enneagram Type Indicator, click <a id="blackLink" href="https://www.enneagraminstitute.com/">here.</a></p>
+                    <p>For more information on the Enneagram, your Enneatype, or to take the full 144-question Riso-Hudson Enneagram Type Indicator, click <a className="blackLink" href="https://www.enneagraminstitute.com/">here.</a></p>
                     <hr></hr>
                     <Footer />
             </div>

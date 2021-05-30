@@ -1,11 +1,9 @@
-// import reportWebVitals from './reportWebVitals';
-// import ReactDOM from 'react-dom';
-// import App from './App';
 import './index.css';
 import React, {Component} from 'react';
 import Home from './Home'
 import Instructions from './Components/Instructions'
 import QuestionsContainer from './Containers/QuestionsContainer'
+import ScrollToTop from './Containers/ScrollToTop'
 import Questions from './Components/Questions'
 import Results from './Components/Results'
 import { BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
@@ -26,19 +24,20 @@ class App extends Component {
     return (
   <React.StrictMode>
     <Router>
-      <div className="navbar">
+      <ScrollToTop />
+      <div>
         <ul>
-          <li>
-            <Link to="/">Home </Link>
+          <li className="navbar">
+            <Link to="/" className="links">Home </Link>
           </li>
-          <li>
-            <Link to="instructions">| Instructions </Link> 
+          <li className="navbar">
+            <Link to="instructions" className="links">| Instructions </Link> 
           </li>
-          <li>
-            <Link to="questionsContainer">| Questions </Link>
+          <li className="navbar">
+            <Link to="questionsContainer" className="links">| Quiz </Link>
           </li>
-          <li>
-            <Link to="results">| Results </Link>
+          <li className="navbar">
+            <Link to="results" className="links">| Results </Link>
           </li>
         </ul>
         <hr />

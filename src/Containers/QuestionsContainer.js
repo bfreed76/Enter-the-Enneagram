@@ -27,7 +27,7 @@ class QuestionsContainer extends Component {
     renderTwoQuestions = () => {    //?Slices initial two questions, ends questions when finished
         const {questions, startingIndex} = this.state   
         const twoQuestions = questions.slice(startingIndex, startingIndex + 2)
-        return (startingIndex >= 13) ? this.processResults() : twoQuestions
+        return (startingIndex >= 72) ? this.processResults() : twoQuestions
         // 72 total questions
     }
     
@@ -53,7 +53,6 @@ class QuestionsContainer extends Component {
         let renderQuestions = this.renderTwoQuestions().map(question => <Questions question={question} id={question.id} nextQuestions={this.nextQuestions} />)
         return(     
             <div className="App">
-                <br></br>
                 <br></br>
                 <h1>Select One</h1>
                 {(this.state.finished) ? this.renderResults() : renderQuestions }

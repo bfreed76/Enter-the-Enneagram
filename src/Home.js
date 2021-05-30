@@ -22,20 +22,18 @@ class App extends Component {
           classify nine interconnected personality types. Each type is defined by
           a particular core belief that anchors your deepest motivations and fears, 
           and shapes your woldview.</p>
-          <p>Understanding your Enneagram type (enneatype) can help you better understand your
+          <p>Understanding your Enneagram type (Enneatype) can help you better understand your
           own attitudes and habits, and improve your performance under stress. Knowing
           others' enneatypes can provide a foundation for building compassion and
           empathy.
           </p>
           <img id="enne1" src={enneagram}
             alt="enneagram symbol"></img>
-          <p>Identify your enneatype in about five minutes with this simplified
-            Enneagram Instute-approved type indicator. When you finish, a description of your
+          <p>Identify your Enneatype in about ten minutes with this quiz, which uses questions approved by the Enneagram Institute. Once you finish, a description of your
             of your primary personality type will be given with links for futher exploration. 
           </p>
-          {/* <button className='button' <Link to='/Instructions'>test</Link>}>Begin</button> */}
           <button className="button" >
-          <Link to='/Instructions' >Next</Link>
+          <Link to='/Instructions' className="links">Instructions</Link>
           </button>
         </div>
     </div>

@@ -9,7 +9,7 @@ class ResultsChart extends Component {
         labels: Object.keys(this.props.countedResults),
         datasets: [
           {
-            label: "EnneaType",
+            label: "Your Enneatype.  Note: if you score similarly for different types, check out the full descriptions of each type by clicking the links below.",
             data: this.props.countedResults,
             fill: true,
             backgroundColor: "rgba(75,192,192,0.8)",
