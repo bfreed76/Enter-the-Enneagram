@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../index.css';
 
 class Instructions extends Component {
-    state = { 
-        userName: ""
-     }
 
     render() { 
 
@@ -29,10 +27,10 @@ class Instructions extends Component {
                                 </li>
                             </ul>
                         <p>To begin, enter your name or an alias and select the start button.</p>    
-                        <form>
-                            <input name='name' className='input' type='text' placeholder='name or alias'></input>
-                        </form>
-                            <button className="button">Begin</button>
+
+                            <button className="button">
+                                <Link to='/QuestionsContainer'>Begin</Link>
+                                </button>
                            
                         <p style={{fontSize: '80%'}}>Note: This 36-question indicator is an abbreviated version of the 144-question Riso-Hudson
                             Enneagram Type Indicator personality inventory. This full version of this test may give

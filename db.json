@@ -1,444 +1,439 @@
 {
-    "results": [
-      {
-        "id": 1,
-        "name": "Brinton",
-        "type": 7
-
-      }
-    ],
-    "questions": [
-      {
-        "id": "01a",
-        "text": "I've been romantic and imaginative.", 
-        "value": "e",
-        "selected": ""
-        },
-        {
-        "id": "01b",
-        "text": "I've been pragmatic and down to earth.", 
-        "value": "b",
-        "selected": ""
-        },
-        {
-        "id": "02a",
-        "text":  "I have tended to take on confrontations.",
-        "value": "g",
-        "selected": ""
-        },
-        {
-        "id": "02b",
-        "text": "I have tended to avoid confrontations",
-        "value": "a",
-        "selected": ""
-        },
-        {
-        "id": "03a",
-        "text": "I have typically been diplomatic, charming, and ambitious.", 
-        "value": "c",
-        "selected": ""
-        },
-        {
-        "id": "03b",
-        "text": "I have typically been direct, formal, and idealistic.",
-        "value": "d",
-        "selected": ""
-        },
-        {
-        "id": "04a",
-        "text": "I have tended to be focused and intense.",
-        "value": "h",
-        "selected": ""
-        },
-        {
-        "id": "04b",
-        "text": "I have tended to be spontaneous and fun-loving.",
-        "value": "i",
-        "selected": ""
-        },
-         {
-        "id": "05a",
-        "text": "I have been a hospitable person and have enjoyed welcoming new friends into my life.",
-        "value": "f",
-        "selected": ""
-        },
-        {
-        "id": "05b",
-        "text": "I have been a private person and have not mixed much with others.",
-        "value": "e",
-        "selected": ""
-        },
-        {
-        "id": "06a",
-        "text": "Generally, it's been easy to 'get a rise' out of me.",
-        "value": "b",
-        "selected": ""
-        },
-        {
-        "id": "06b",
-        "text":  "Generally, it's been difficult to 'get a rise' out of me.",
-        "value": "a",
-        "selected": ""
-        },
-        {
-        "id": "07a",
-        "text": "I’ve been more of a 'street-smart' survivor.",
-        "value": "g",
-        "selected": ""
-        },
-        {
-        "id": "07b",
-        "text": "I’ve been more of a ‘high-minded’ idealist.",
-        "value": "d",
-        "selected": ""
-        },
-        {
-        "id": "08a",
-        "text": "I have needed to show affection to people.",
-        "value": "f",
-        "selected": ""
-        },
-        {
-        "id": "08b",
-        "text": "I have preferred to maintain a certain distance with people.",
-        "value": "h",
-        "selected": ""
-        },
-        {
-        "id": "09a",
-        "text": "When presented with a new experience, I've usually asked myself if it would be useful to me.",
-        "value": "c",
-        "selected": ""
-        },
-        {
-        "id": "09b",
-        "text": "When presented with a new experience, I've usually asked myself if it would be enjoyable.", 
-        "value": "i",
-        "selected": ""
-        },
-         {
-        "id": "10a",
-        "text": "I have tended to focus too much on myself.", 
-        "value": "e",
-        "selected": ""
-        },
-        {
-        "id": "10b",
-        "text": "I have tended to focus too much on others.", 
-        "value": "a",
-        "selected": ""
-        },
-        {
-        "id": "11a",
-        "text": "Others have depended on my insight and knowledge.",
-        "value": "h",
-        "selected": ""
-        },
-        {
-        "id": "11b",
-        "text": "Others have depended on my strength and decisiveness.",
-        "value": "g",
-        "selected": ""
-        },
-        {
-        "id": "12a",
-        "text": "I have come across as being too unsure of myself.",
-        "value": "b",
-        "selected": ""
-        },
-        {
-        "id": "12b",
-        "text": "I have come across as being too sure of myself.",
-        "value": "d",
-        "selected": ""
-        },
-        {
-        "id": "13a",
-        "text": "I have been more relationship-oriented than goal-oriented.",
-        "value": "f",
-        "selected": ""
-        },
-        {
-        "id": "13b",
-        "text": "I have been more goal-oriented than relationship-oriented",
-        "value": "c",
-        "selected": ""
-        },
-        {
-        "id": "14a",
-        "text": "I have not been able to speak up for myself very well.",
-        "value": "e",
-        "selected": ""
-        },
-        {
-        "id": "14b",
-        "text": "I have been outspoken—I’ve said what others wished they had the nerve to say.",
-        "value": "i",
-        "selected": ""
-        },
-        {
-        "id": "15a",
-        "text": "It’s been difficult for me to stop considering alternatives and do something definite.",
-        "value": "h",
-        "selected": ""
-        },
-        {
-        "id": "15b",
-        "text": "It's been difficult for me to take it easy and be more flexible.",
-        "value": "d",
-        "selected": ""
-        },
-        {
-        "id": "16a",
-        "text": "I have tended to be hesitant and procrastinating.",
-        "value": "b",
-        "selected": ""
-        },
-        {
-        "id": "16b",
-        "text": "I have tended to be bold and domineering.",
-        "value": "g",
-        "selected": ""
-        },
-        {
-        "id": "17a",
-        "text": "My reluctance to get too involved has gotten me into trouble with people",
-        "value": "a",
-        "selected": ""
-        },
-        {
-        "id": "17b",
-        "text": "My eagerness to have people depend on me has gotten me into trouble with them.",
-        "value": "f",
-        "selected": ""
-        },
-        {
-        "id": "18a",
-        "text": "Usually, I have been able to put my feelings aside to get the job done.",
-        "value": "c",
-        "selected": ""
-        },
-        {
-        "id": "18b",
-        "text": "Usually, I have needed to work through my feelings before I could act.",
-        "value": "e",
-        "selected": ""
-        },
-        {
-        "id": "19a",
-        "text": "Generally, I have been methodical and cautious.",
-        "value": "b",
-        "selected": ""
-        },
-        {
-        "id": "19b",
-        "text": "Generally, I have been adventurous and taken risks.",
-        "value": "i",
-        "selected": ""
-        },
-        {
-        "id": "20a",
-        "text": "I have tended to be a supportive, giving person who enjoys the company of others.",
-        "value": "f",
-        "selected": ""
-        },
-        {
-        "id": "20b",
-        "text": "I have tended to be a serious, reserved person who likes discussing issues.",
-        "value": "d",
-        "selected": ""
-        },
-        {
-        "id": "21a",
-        "text": "I've often felt the need to be a 'pillar of strength.'",
-        "value": "g",
-        "selected": ""
-        },
-        {
-        "id": "21b",
-        "text": "I’ve often felt the need to perform perfectly.",
-        "value": "c",
-        "selected": ""
-        },
-        {
-        "id": "22a",
-        "text": "I’ve typically been interested in asking tough questions and maintaining my independence.",
-        "value": "h",
-        "selected": ""
-        },
-        {
-        "id": "22b",
-        "text": "I’ve typically been interested in maintaining my stability and peace of mind.",
-        "value": "a",
-        "selected": ""
-        },
-        {
-        "id": "23a",
-        "text": "I’ve been too hard-nosed and sceptical.",
-        "value": "b",
-        "selected": ""
-        },
-        {
-        "id": "23b",
-        "text": "I’ve been too soft-hearted and sentimental.",
-        "value": "f",
-        "selected": ""
-        },
-        {
-        "id": "24a",
-        "text":  "I've often worried that I'm missing out on something better.",
-        "value": "i",
-        "selected": ""
-        },
-        {
-        "id": "24b",
-        "text": "I've often worried that if I let down my guard, someone will take advantage of me.",
-        "value": "g",
-        "selected": ""
-        },
-        {
-        "id": "25a",
-        "text": "My habit of being 'stand-offish' has annoyed people",
-        "value": "e",
-        "selected": ""
-        },
-        {
-        "id": "25b",
-        "text": "My habit of telling people what to do has annoyed people.",
-        "value": "d",
-        "selected": ""
-        },
-        {
-        "id": "26a",
-        "text": "Usually, when troubles have gotten to me, I have been able to 'tune them out.'",
-        "value": "a",
-        "selected": ""
-        },
-        {
-        "id": "26b",
-        "text": "Usually, when troubles have gotten to me, I have treated myself to something I’ve enjoyed.", 
-        "value": "i",
-        "selected": ""
-        },
-        {
-        "id": "27a",
-        "text": "I have depended upon my friends and they have known that they can depend on me.",
-        "value": "b",
-        "selected": ""
-        },
-        {
-        "id": "27b",
-        "text": "I have not depended on people; I have done things on my own.",
-        "value": "c",
-        "selected": ""
-        },
-        {
-        "id": "28a",
-        "text": "I have tended to be detached and preoccupied.",
-        "value": "h",
-        "selected": ""
-        },
-        {
-        "id": "28b",
-        "text": "I have tended to be moody and self-absorbed.",
-        "value": "e",
-        "selected": ""
-        },
-        {
-        "id": "29a",
-        "text": "I have liked to challenge people and 'shake them up.'", 
-        "value": "g",
-        "selected": ""
-        },
-        {
-        "id": "29b",
-        "text": "I have liked to comfort people and calm them down.", 
-        "value": "f",
-        "selected": ""
-        },
-        {
-        "id": "30a",
-        "text": "I have generally been an outgoing, sociable person.",
-        "value": "i",
-        "selected": ""
-        },
-        {
-        "id": "30b",
-        "text": "I have generally been an earnest, self-disciplined person.",
-        "value": "d",
-        "selected": ""
-        },
-        {
-        "id": "31a",
-        "text": "I've usually been shy about showing my abilities.",
-        "value": "a",
-        "selected": ""
-        },
-        {
-        "id": "31b",
-        "text": "I've usually liked to let people know what I can do well.",
-        "value": "c",
-        "selected": ""
-        },
-        {
-        "id": "32a",
-        "text": "Pursuing my personal interests has been more important to me than having comfort and security.",
-        "value": "h",
-        "selected": ""
-        },
-        {
-        "id": "32b",
-        "text": "Having comfort and security has been more important to me than pursuing my personal interests.", 
-        "value": "b",
-        "selected": ""
-        },
-        {
-        "id": "33a",
-        "text": "When I've had conflict with others, I've tended to withdraw.",
-        "value": "e",
-        "selected": ""
-        },
-        {
-        "id": "33b",
-        "text": "When I've had conflict with others, I've rarely backed down.", 
-        "value": "g",
-        "selected": ""
-        },
-        {
-        "id": "34a",
-        "text": "I have given in too easily and let others push me around.",
-        "value": "a",
-        "selected": ""
-        },
-        {
-        "id": "34b",
-        "text": "I have been too uncompromising and demanding with others.",
-        "value": "d",
-        "selected": ""
-        },
-        {
-        "id": "35a",
-        "text": "I've been appreciated for my unsinkable spirit and great sense of humour.",
-        "value": "i",
-        "selected": ""
-        },
-        {
-        "id": "35b",
-        "text": "I've been appreciated for my quiet strength and exceptional generosity.", 
-        "value": "f",
-        "selected": ""
-        },
-        {
-        "id": "36a",
-        "text": "Much of my success has been due to my talent for making a favourable impression.", 
-        "value": "c",
-        "selected": ""
-        },
-        {
-        "id": "36b",
-        "text": "Much of my success has been achieved despite my lack of interest in developing 'interpersonal skills.'",
-        "value": "h",
-        "selected": ""
-        }
-    ]
+  "results": [
+    
+  ],
+  "questions": [
+    {
+      "id": "01a",
+      "text": "I've been romantic and imaginative.",
+      "value": "e",
+      "selected": ""
+    },
+    {
+      "id": "01b",
+      "text": "I've been pragmatic and down to earth.",
+      "value": "b",
+      "selected": ""
+    },
+    {
+      "id": "02a",
+      "text": "I have tended to take on confrontations.",
+      "value": "g",
+      "selected": ""
+    },
+    {
+      "id": "02b",
+      "text": "I have tended to avoid confrontations",
+      "value": "a",
+      "selected": ""
+    },
+    {
+      "id": "03a",
+      "text": "I have typically been diplomatic, charming, and ambitious.",
+      "value": "c",
+      "selected": ""
+    },
+    {
+      "id": "03b",
+      "text": "I have typically been direct, formal, and idealistic.",
+      "value": "d",
+      "selected": ""
+    },
+    {
+      "id": "04a",
+      "text": "I have tended to be focused and intense.",
+      "value": "h",
+      "selected": ""
+    },
+    {
+      "id": "04b",
+      "text": "I have tended to be spontaneous and fun-loving.",
+      "value": "i",
+      "selected": ""
+    },
+    {
+      "id": "05a",
+      "text": "I have been a hospitable person and have enjoyed welcoming new friends into my life.",
+      "value": "f",
+      "selected": ""
+    },
+    {
+      "id": "05b",
+      "text": "I have been a private person and have not mixed much with others.",
+      "value": "e",
+      "selected": ""
+    },
+    {
+      "id": "06a",
+      "text": "Generally, it's been easy to 'get a rise' out of me.",
+      "value": "b",
+      "selected": ""
+    },
+    {
+      "id": "06b",
+      "text": "Generally, it's been difficult to 'get a rise' out of me.",
+      "value": "a",
+      "selected": ""
+    },
+    {
+      "id": "07a",
+      "text": "I’ve been more of a 'street-smart' survivor.",
+      "value": "g",
+      "selected": ""
+    },
+    {
+      "id": "07b",
+      "text": "I’ve been more of a ‘high-minded’ idealist.",
+      "value": "d",
+      "selected": ""
+    },
+    {
+      "id": "08a",
+      "text": "I have needed to show affection to people.",
+      "value": "f",
+      "selected": ""
+    },
+    {
+      "id": "08b",
+      "text": "I have preferred to maintain a certain distance with people.",
+      "value": "h",
+      "selected": ""
+    },
+    {
+      "id": "09a",
+      "text": "When presented with a new experience, I've usually asked myself if it would be useful to me.",
+      "value": "c",
+      "selected": ""
+    },
+    {
+      "id": "09b",
+      "text": "When presented with a new experience, I've usually asked myself if it would be enjoyable.",
+      "value": "i",
+      "selected": ""
+    },
+    {
+      "id": "10a",
+      "text": "I have tended to focus too much on myself.",
+      "value": "e",
+      "selected": ""
+    },
+    {
+      "id": "10b",
+      "text": "I have tended to focus too much on others.",
+      "value": "a",
+      "selected": ""
+    },
+    {
+      "id": "11a",
+      "text": "Others have depended on my insight and knowledge.",
+      "value": "h",
+      "selected": ""
+    },
+    {
+      "id": "11b",
+      "text": "Others have depended on my strength and decisiveness.",
+      "value": "g",
+      "selected": ""
+    },
+    {
+      "id": "12a",
+      "text": "I have come across as being too unsure of myself.",
+      "value": "b",
+      "selected": ""
+    },
+    {
+      "id": "12b",
+      "text": "I have come across as being too sure of myself.",
+      "value": "d",
+      "selected": ""
+    },
+    {
+      "id": "13a",
+      "text": "I have been more relationship-oriented than goal-oriented.",
+      "value": "f",
+      "selected": ""
+    },
+    {
+      "id": "13b",
+      "text": "I have been more goal-oriented than relationship-oriented",
+      "value": "c",
+      "selected": ""
+    },
+    {
+      "id": "14a",
+      "text": "I have not been able to speak up for myself very well.",
+      "value": "e",
+      "selected": ""
+    },
+    {
+      "id": "14b",
+      "text": "I have been outspoken—I’ve said what others wished they had the nerve to say.",
+      "value": "i",
+      "selected": ""
+    },
+    {
+      "id": "15a",
+      "text": "It’s been difficult for me to stop considering alternatives and do something definite.",
+      "value": "h",
+      "selected": ""
+    },
+    {
+      "id": "15b",
+      "text": "It's been difficult for me to take it easy and be more flexible.",
+      "value": "d",
+      "selected": ""
+    },
+    {
+      "id": "16a",
+      "text": "I have tended to be hesitant and procrastinating.",
+      "value": "b",
+      "selected": ""
+    },
+    {
+      "id": "16b",
+      "text": "I have tended to be bold and domineering.",
+      "value": "g",
+      "selected": ""
+    },
+    {
+      "id": "17a",
+      "text": "My reluctance to get too involved has gotten me into trouble with people",
+      "value": "a",
+      "selected": ""
+    },
+    {
+      "id": "17b",
+      "text": "My eagerness to have people depend on me has gotten me into trouble with them.",
+      "value": "f",
+      "selected": ""
+    },
+    {
+      "id": "18a",
+      "text": "Usually, I have been able to put my feelings aside to get the job done.",
+      "value": "c",
+      "selected": ""
+    },
+    {
+      "id": "18b",
+      "text": "Usually, I have needed to work through my feelings before I could act.",
+      "value": "e",
+      "selected": ""
+    },
+    {
+      "id": "19a",
+      "text": "Generally, I have been methodical and cautious.",
+      "value": "b",
+      "selected": ""
+    },
+    {
+      "id": "19b",
+      "text": "Generally, I have been adventurous and taken risks.",
+      "value": "i",
+      "selected": ""
+    },
+    {
+      "id": "20a",
+      "text": "I have tended to be a supportive, giving person who enjoys the company of others.",
+      "value": "f",
+      "selected": ""
+    },
+    {
+      "id": "20b",
+      "text": "I have tended to be a serious, reserved person who likes discussing issues.",
+      "value": "d",
+      "selected": ""
+    },
+    {
+      "id": "21a",
+      "text": "I've often felt the need to be a 'pillar of strength.'",
+      "value": "g",
+      "selected": ""
+    },
+    {
+      "id": "21b",
+      "text": "I’ve often felt the need to perform perfectly.",
+      "value": "c",
+      "selected": ""
+    },
+    {
+      "id": "22a",
+      "text": "I’ve typically been interested in asking tough questions and maintaining my independence.",
+      "value": "h",
+      "selected": ""
+    },
+    {
+      "id": "22b",
+      "text": "I’ve typically been interested in maintaining my stability and peace of mind.",
+      "value": "a",
+      "selected": ""
+    },
+    {
+      "id": "23a",
+      "text": "I’ve been too hard-nosed and sceptical.",
+      "value": "b",
+      "selected": ""
+    },
+    {
+      "id": "23b",
+      "text": "I’ve been too soft-hearted and sentimental.",
+      "value": "f",
+      "selected": ""
+    },
+    {
+      "id": "24a",
+      "text": "I've often worried that I'm missing out on something better.",
+      "value": "i",
+      "selected": ""
+    },
+    {
+      "id": "24b",
+      "text": "I've often worried that if I let down my guard, someone will take advantage of me.",
+      "value": "g",
+      "selected": ""
+    },
+    {
+      "id": "25a",
+      "text": "My habit of being 'stand-offish' has annoyed people",
+      "value": "e",
+      "selected": ""
+    },
+    {
+      "id": "25b",
+      "text": "My habit of telling people what to do has annoyed people.",
+      "value": "d",
+      "selected": ""
+    },
+    {
+      "id": "26a",
+      "text": "Usually, when troubles have gotten to me, I have been able to 'tune them out.'",
+      "value": "a",
+      "selected": ""
+    },
+    {
+      "id": "26b",
+      "text": "Usually, when troubles have gotten to me, I have treated myself to something I’ve enjoyed.",
+      "value": "i",
+      "selected": ""
+    },
+    {
+      "id": "27a",
+      "text": "I have depended upon my friends and they have known that they can depend on me.",
+      "value": "b",
+      "selected": ""
+    },
+    {
+      "id": "27b",
+      "text": "I have not depended on people; I have done things on my own.",
+      "value": "c",
+      "selected": ""
+    },
+    {
+      "id": "28a",
+      "text": "I have tended to be detached and preoccupied.",
+      "value": "h",
+      "selected": ""
+    },
+    {
+      "id": "28b",
+      "text": "I have tended to be moody and self-absorbed.",
+      "value": "e",
+      "selected": ""
+    },
+    {
+      "id": "29a",
+      "text": "I have liked to challenge people and 'shake them up.'",
+      "value": "g",
+      "selected": ""
+    },
+    {
+      "id": "29b",
+      "text": "I have liked to comfort people and calm them down.",
+      "value": "f",
+      "selected": ""
+    },
+    {
+      "id": "30a",
+      "text": "I have generally been an outgoing, sociable person.",
+      "value": "i",
+      "selected": ""
+    },
+    {
+      "id": "30b",
+      "text": "I have generally been an earnest, self-disciplined person.",
+      "value": "d",
+      "selected": ""
+    },
+    {
+      "id": "31a",
+      "text": "I've usually been shy about showing my abilities.",
+      "value": "a",
+      "selected": ""
+    },
+    {
+      "id": "31b",
+      "text": "I've usually liked to let people know what I can do well.",
+      "value": "c",
+      "selected": ""
+    },
+    {
+      "id": "32a",
+      "text": "Pursuing my personal interests has been more important to me than having comfort and security.",
+      "value": "h",
+      "selected": ""
+    },
+    {
+      "id": "32b",
+      "text": "Having comfort and security has been more important to me than pursuing my personal interests.",
+      "value": "b",
+      "selected": ""
+    },
+    {
+      "id": "33a",
+      "text": "When I've had conflict with others, I've tended to withdraw.",
+      "value": "e",
+      "selected": ""
+    },
+    {
+      "id": "33b",
+      "text": "When I've had conflict with others, I've rarely backed down.",
+      "value": "g",
+      "selected": ""
+    },
+    {
+      "id": "34a",
+      "text": "I have given in too easily and let others push me around.",
+      "value": "a",
+      "selected": ""
+    },
+    {
+      "id": "34b",
+      "text": "I have been too uncompromising and demanding with others.",
+      "value": "d",
+      "selected": ""
+    },
+    {
+      "id": "35a",
+      "text": "I've been appreciated for my unsinkable spirit and great sense of humour.",
+      "value": "i",
+      "selected": ""
+    },
+    {
+      "id": "35b",
+      "text": "I've been appreciated for my quiet strength and exceptional generosity.",
+      "value": "f",
+      "selected": ""
+    },
+    {
+      "id": "36a",
+      "text": "Much of my success has been due to my talent for making a favourable impression.",
+      "value": "c",
+      "selected": ""
+    },
+    {
+      "id": "36b",
+      "text": "Much of my success has been achieved despite my lack of interest in developing 'interpersonal skills.'",
+      "value": "h",
+      "selected": ""
+    }
+  ]
 }

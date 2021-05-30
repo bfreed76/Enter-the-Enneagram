@@ -17,7 +17,6 @@ class App extends Component {
   })
 
   resultsToState = (results) => {
-    console.log('APP', results)
     this.setState({
       initialResults: results
     })

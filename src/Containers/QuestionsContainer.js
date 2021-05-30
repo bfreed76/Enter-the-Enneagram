@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import Questions from '../Components/Questions';
-import Results from '../Components/Results'
+import '../index.css';
 
 class QuestionsContainer extends Component {
     state = { 
         questions: [],
         startingIndex: 0,
         initialResults: [],
-        finished: false //!
+        finished: false 
      }
 
-     componentDidMount(){
+    componentDidMount(){
          this.fetchQuestions()
      }
 
-     fetchQuestions = () => {   //?GETs all Questions
+    fetchQuestions = () => {   //?GETs all Questions
         fetch("http://localhost:3001/questions")
         .then(res => res.json())
         .then(questionsArr => {
@@ -27,8 +27,8 @@ class QuestionsContainer extends Component {
     renderTwoQuestions = () => {    //?Slices initial two questions, ends questions when finished
         const {questions, startingIndex} = this.state   
         const twoQuestions = questions.slice(startingIndex, startingIndex + 2)
-        return (startingIndex >= 12) ? this.processResults() : twoQuestions
-        //72 is the num of choice
+        return (startingIndex >= 13) ? this.processResults() : twoQuestions
+        // 72 total questions
     }
     
     nextQuestions = (e) => {    //?Selects next two questions
@@ -38,14 +38,6 @@ class QuestionsContainer extends Component {
                 initialResults: [...this.state.initialResults, e.target.value]
             }
         })
-        // const {initialResults} = this.state
-        // const resultsObj = {}
-        // initialResults.map(result => {
-        //     !Object.keys(resultsObj).includes(result) ? resultsObj[result] = 1 : resultsObj[result] += 1
-        // })
-        // this.setState({
-        //     countedResults: resultsObj
-        // })
         this.renderTwoQuestions()
     }
     
@@ -58,12 +50,11 @@ class QuestionsContainer extends Component {
     renderResults = () => {this.props.resultsToState(this.state.initialResults)}
 
     render() { 
-
         let renderQuestions = this.renderTwoQuestions().map(question => <Questions question={question} id={question.id} nextQuestions={this.nextQuestions} />)
-
-
         return(     
-            <div>
+            <div className="App">
+                <br></br>
+                <br></br>
                 <h1>Select One</h1>
                 {(this.state.finished) ? this.renderResults() : renderQuestions }
             </div>
@@ -71,5 +62,4 @@ class QuestionsContainer extends Component {
     }
 }
     
- 
 export default QuestionsContainer;

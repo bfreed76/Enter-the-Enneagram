@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .App {
   text-align: center;
   background-color: #282c34;
@@ -21,6 +26,11 @@ code {
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+#results {
+  background-color: black;
+  color: #ffffff
 }
 
 .App-link {
@@ -38,9 +48,10 @@ code {
 }
 
 .button {
-  background-color: #a1badb; /* Green */
-  color: Blablack;
+  background-color: rgb(161, 186, 219); 
+  color: Black;
   padding: 15px 32px;
+  margin-left: 1%;
   text-align: center;
   border-radius: 30%;
   display: inline-block;
@@ -59,8 +70,36 @@ code {
   margin-bottom: 1%;
 }
 
-.chart {
-  display: inline-block;
-  max-width: 75%;
-  height: 1.5em;
+.hr {
+  background-color: white;
+  width: 50%
+}
+
+.table {
+  color: black;
+  background-color: white;
+  text-align: left;
+  font-size: 20px
+}
+
+#blackLink {
+  color: white;
+  font-weight: bold
+}
+
+.row { 
+  display: flex;
+}
+
+.column {
+  width: 800px;
+} 
+
+.form {
+  margin-top: 2.8%;
+  /* background-color: rgba(75,192,192,0.8) */
+} 
+
+small {
+  color:rgb(148, 139, 139)
 }

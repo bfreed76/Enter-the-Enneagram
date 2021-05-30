@@ -14,15 +14,27 @@ class ResultsChart extends Component {
             fill: true,
             backgroundColor: "rgba(75,192,192,0.8)",
             borderColor: "rgba(75,192,192,1)"
+            
           },
-    
         ]
       };
 
+      options = {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    fontSize: 40
+                }
+            }]
+        }
+    }
+
     render() {
         return (
-            <div classsName="chart">
-                 <Bar data={this.data} />
+            <div>
+              <hr></hr>
+                 <Bar data={this.data} options={this.options}/>
+              <hr></hr>
             </div>
         )
     }
