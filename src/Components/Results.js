@@ -3,6 +3,7 @@ import ResultsChart from './ResultsChart'
 import ResultsTable from './ResultsTable'
 import Footer from './Footer'
 import '../index.css';
+import Test from './Test';
 
 
 class Results extends Component {

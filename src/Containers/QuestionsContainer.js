@@ -27,7 +27,7 @@ class QuestionsContainer extends Component {
     renderTwoQuestions = () => {            //? SLICES FIRST SET OF TWO QUESTIONS, KILLS PROCESS WHEN FINISHED
         const {questions, startingIndex} = this.state   
         const twoQuestions = questions.slice(startingIndex, startingIndex + 2)
-        return (startingIndex >= 52) ? this.processResults() : twoQuestions
+        return (startingIndex >= 72) ? this.processResults() : twoQuestions
         // 72 total questions
     }
     
