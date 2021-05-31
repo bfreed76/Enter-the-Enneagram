@@ -12,7 +12,7 @@ class Results extends Component {
         finishedCounting: false
     }
 
-    resultsCount = () => {      //? Sums frequency of each results, turns array into obj
+    resultsCount = () => {      //? COUNTS FREQUENCY OF RESULTS AND CREATES OBJECT
         let initialResults = Array.from(this.props.initialResults)
         const resultsObj = {}
         if(!!initialResults) {
@@ -26,7 +26,7 @@ class Results extends Component {
         }
         }
 
-    handleSubmit = (e) => {
+    handleSubmit = (e) => {         //? POSTS NAME AND SCORE TO JSON SERVER
         e.preventDefault() 
         let name = e.target.firstChild.value
         let request = {
@@ -40,10 +40,10 @@ class Results extends Component {
             };
         fetch('http://localhost:3001/results', request)
             .then(response => response.json())
-            .then(data => console.log("POSTED", data))
+            .then(data => console.log("POST", data))
             }
 
-render() { 
+render() {              //? DISPLAYS RESULTS AND HOLDS POST FORM
         return ( 
             <div id="results">
                 <div className="row">

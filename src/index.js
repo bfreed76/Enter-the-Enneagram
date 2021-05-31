@@ -1,8 +1,3 @@
-// import Instructions from './Components/Instructions'
-// import QuestionsContainer from './Containers/QuestionsContainer'
-// import Questions from './Components/Questions'
-// import Results from './Components/Results'
-// import { BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';

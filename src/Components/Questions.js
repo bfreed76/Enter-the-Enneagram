@@ -1,7 +1,7 @@
 import React from 'react';
 import '../index.css';
 
-const Questions = ({question, nextQuestions, id}) => {
+const Questions = ({question, nextQuestions, id}) => {          //? QUESTION CARD
 
         return ( 
             <div id={id}>

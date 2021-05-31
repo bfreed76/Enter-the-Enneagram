@@ -1,7 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 
-class ScrollToTop extends React.Component {
+class ScrollToTop extends React.Component {             //? ENABLES SCROLL TO TOP FEATURE
   componentDidUpdate(prevProps) {
     if (
       this.props.location.pathname !== prevProps.location.pathname

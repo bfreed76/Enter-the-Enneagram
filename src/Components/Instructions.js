@@ -4,7 +4,7 @@ import '../index.css';
 
 class Instructions extends Component {
 
-    render() { 
+    render() {          //? INSTRUCTIONS WITH LINKS
 
         return ( 
             <div className="App">
@@ -28,7 +28,7 @@ class Instructions extends Component {
                             <br></br>
                             <br></br>
                             <button className="button">
-                                <Link to='/QuestionsContainer' className="links">Quiz</Link>
+                                <Link to='/questionscontainer' className="links">Quiz</Link> 
                                 </button>
                            <hr></hr>
                         <p style={{fontSize: '80%'}}>Note: This 36-question indicator is an abbreviated version of the 144-question Riso-Hudson

@@ -14,17 +14,17 @@ class App extends Component {
     initialResults: {}
   })
 
-  resultsToState = (results) => {
+  resultsToState = (results) => {     //? INITIAL RESULTS FROM QUESTIONSCONTAINER TO RESULTS
     this.setState({
       initialResults: results
     })
   }
 
   render () {
-    return (
-  <React.StrictMode>
+    return (      //? NAVBAR
+      <React.StrictMode>
     <Router>
-      <ScrollToTop />
+    <ScrollToTop />     
       <div>
         <ul>
           <li className="navbar">
@@ -34,21 +34,19 @@ class App extends Component {
             <Link to="instructions" className="links">| Instructions </Link> 
           </li>
           <li className="navbar">
-            <Link to="questionsContainer" className="links">| Quiz </Link>
+            <Link to="questionscontainer" className="links">| Quiz </Link>
           </li>
           <li className="navbar">
             <Link to="results" className="links">| Results </Link>
           </li>
         </ul>
         <hr />
-        <Switch>
+        <Switch>      //? ROUTING
           <Route exact path="/" component={Home} />
           <Route exact path="/instructions" component={Instructions} />
-          {/* <Route exact path="/questionsContainer" component={QuestionsContainer} /> */}
           <Route exact path="/questions" component={Questions} />
-          {/* <Route exact path="/results" render={Results} /> */}
           <Route exact path='/results' render={(routeProps) => <Results {...routeProps} initialResults={this.state.initialResults} />} />
-          <Route exact path='/questionsContainer' render={(routeProps) => <QuestionsContainer {...routeProps} resultsToState={this.resultsToState} />} />
+          <Route exact path='/questionscontainer' render={(routeProps) => <QuestionsContainer {...routeProps} resultsToState={this.resultsToState} />} />
         </Switch>
       </div>
     </Router>

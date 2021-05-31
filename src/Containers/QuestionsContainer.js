@@ -14,7 +14,7 @@ class QuestionsContainer extends Component {
          this.fetchQuestions()
      }
 
-    fetchQuestions = () => {   //?GETs all Questions
+    fetchQuestions = () => {            //? GETS QUESTION ARRAY
         fetch("http://localhost:3001/questions")
         .then(res => res.json())
         .then(questionsArr => {
@@ -24,14 +24,14 @@ class QuestionsContainer extends Component {
         })
      }
 
-    renderTwoQuestions = () => {    //?Slices initial two questions, ends questions when finished
+    renderTwoQuestions = () => {            //? SLICES FIRST SET OF TWO QUESTIONS, KILLS PROCESS WHEN FINISHED
         const {questions, startingIndex} = this.state   
         const twoQuestions = questions.slice(startingIndex, startingIndex + 2)
-        return (startingIndex >= 72) ? this.processResults() : twoQuestions
+        return (startingIndex >= 52) ? this.processResults() : twoQuestions
         // 72 total questions
     }
     
-    nextQuestions = (e) => {    //?Selects next two questions
+    nextQuestions = (e) => {            //? COUNTER FOR QUESTION SETS
         this.setState(prevState => {
             return{
                 startingIndex: prevState.startingIndex + 2,
@@ -41,13 +41,13 @@ class QuestionsContainer extends Component {
         this.renderTwoQuestions()
     }
     
-    processResults = () => {     //?Tallys results and passes them to Results.js; renders Results.js
+    processResults = () => {            //? NAVIGATES TO RESULTS COMPONENT WHEN FINISHED
         this.state.finished = true
         this.props.history.push('/results')
         return []
     }
     
-    renderResults = () => {this.props.resultsToState(this.state.initialResults)}
+    renderResults = () => {this.props.resultsToState(this.state.initialResults)}            //? SENDS RESULTS TO APP.JS WHEN FINISHED
 
     render() { 
         let renderQuestions = this.renderTwoQuestions().map(question => <Questions question={question} id={question.id} nextQuestions={this.nextQuestions} />)

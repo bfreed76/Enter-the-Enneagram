@@ -1,7 +1,7 @@
 import React from 'react'
 import '../index.css'
 
-export default function App() {
+export default function App() {         //? DISPLAYS TABLE
     return (
       <div  className="table">
         <table>
