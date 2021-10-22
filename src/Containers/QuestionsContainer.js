@@ -7,15 +7,15 @@ class QuestionsContainer extends Component {
     questions: [],
     startingIndex: 0,
     initialResults: [],
-    finished: false,
   };
+
 
   componentDidMount() {
     this.fetchQuestions();
   }
 
+  //? GETS QUESTION ARRAY
   fetchQuestions = () => {
-    //? GETS QUESTION ARRAY
     fetch("http://localhost:3001/questions")
       .then((res) => res.json())
       .then((questionsArr) => {
@@ -29,7 +29,7 @@ class QuestionsContainer extends Component {
   renderTwoQuestions = () => {
     const { questions, startingIndex } = this.state;
     const twoQuestions = questions.slice(startingIndex, startingIndex + 2);
-    return startingIndex >= 72 ? this.processResults() : twoQuestions;
+    return startingIndex >= 6 ? this.processResults() : twoQuestions;
     // 72 total questions
   };
 
@@ -46,7 +46,7 @@ class QuestionsContainer extends Component {
 
   //? NAVIGATES TO RESULTS COMPONENT WHEN FINISHED
   processResults = () => {
-    this.state.finished = true;
+    this.finished = true;
     this.props.history.push("/results");
     return [];
   };
@@ -64,7 +64,7 @@ class QuestionsContainer extends Component {
       <div className='App'>
         <br></br>
         <h1>Select One</h1>
-        {this.state.finished ? this.renderResults() : renderQuestions}
+        {this.finished ? this.renderResults() : renderQuestions}
       </div>
     );
   }
