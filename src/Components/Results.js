@@ -27,23 +27,23 @@ class Results extends Component {
     }
   };
 
-  //? POSTS NAME AND SCORE TO JSON SERVER
-  handleSubmit = (e) => {
-    e.preventDefault();
-    let name = e.target.firstChild.value;
-    let request = {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        id: "",
-        name: name,
-        results: this.state.countedResults,
-      }),
-    };
-    fetch("http://localhost:3001/results", request)
-      .then((response) => response.json())
-      .then((data) => console.log("POST", data));
-  };
+  // //? (FOR FUTURE DEVELOPMENT!) POSTS NAME AND SCORE TO JSON SERVER
+  // handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   let name = e.target.firstChild.value;
+  //   let request = {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify({
+  //       id: "",
+  //       name: name,
+  //       results: this.state.countedResults,
+  //     }),
+  //   };
+  //   fetch("http://localhost:3001/results", request)
+  //     .then((response) => response.json())
+  //     .then((data) => console.log("POST", data));
+  // };
 
   //? DISPLAYS RESULTS AND HOLDS POST FORM
   render() {
@@ -54,12 +54,12 @@ class Results extends Component {
             <h1>Your Results</h1>
           </div>
           <div className='column'>
-            <form className='form' onSubmit={this.handleSubmit}>
+            {/* <form className='form' onSubmit={this.handleSubmit}>
               <input type='text' placeholder='Your Name' style={{ fontSize: 20 }}></input>
               <button className='button' style={{ fontSize: 18 }}>
                 Save Your Score
               </button>
-            </form>
+            </form> */}
           </div>
         </div>
         <div style={{ backgroundColor: "white" }}>
