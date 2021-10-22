@@ -21,7 +21,10 @@
   "scripts": {
     "start": "react-scripts start",
     "json-server": "json-server --watch db.json --port 3001",
+    "clean": "rm -rf public",
     "build": "react-scripts build",
+    "deploy": "cp -a client/build/. public/",
+    "heroku-postbuild": "npm run clean && npm run build && npm run deploy",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
