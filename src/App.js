@@ -41,7 +41,7 @@ class App extends Component {
           </li>
         </ul>
         <hr />
-        <Switch>      //? ROUTING
+        <Switch>      
           <Route exact path="/" component={Home} />
           <Route exact path="/instructions" component={Instructions} />
           <Route exact path="/questions" component={Questions} />
