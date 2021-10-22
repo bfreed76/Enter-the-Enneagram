@@ -29,7 +29,7 @@ class QuestionsContainer extends Component {
   renderTwoQuestions = () => {
     const { questions, startingIndex } = this.state;
     const twoQuestions = questions.slice(startingIndex, startingIndex + 2);
-    return startingIndex >= 6 ? this.processResults() : twoQuestions;
+    return startingIndex >= 72 ? this.processResults() : twoQuestions;
     // 72 total questions
   };
 
