@@ -1,80 +1,110 @@
 # Enter the Enneagram! 
 
 
-See the working demo and [find out your Enneagram!](https://enter-the-enneagram.herokuapp.com/)
+See the working app and [discover your Enneatype!](https://enter-the-enneagram.herokuapp.com/)
 
-Stay tuned for an updated readme! -10/22/21
+ 
+<p align="center">
+<img src="./public/i_screenshot1.jpg" alt="screenshot">
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This app uses React, HTML and CSS on the frontend and JSON server to provide a simple, RESTful backend. 
 
-In the project directory, you can run:
+Please note that this repository contains the frontend for Enter the Enneagram. [The  backend can be found here.](https://github.com/bfreed76/Enter-the_Enneagram_Backend)
 
-### `npm start`
+![Heroku](https://heroku-badge.herokuapp.com/?app=heroku-badge)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Built Using
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+[![React](https://img.shields.io/badge/-React-black?style=flat-square&logo=react)](https://reactjs.org/) [![ReactRouter](https://img.shields.io/badge/ReactRouter-4F545E?style=flat&logo=reactrouter)](https://reactrouter.com/) ![JSON-server](https://img.shields.io/badge/JSON%20Server-green?style=flat&logo=json) ![React-ChartJS-II](https://img.shields.io/badge/ChartJS%20II-pink?style=flat&logo=react)
 
-### `JSON-server`
+<p align="center">
+<img src="./public/i_screenshot2.jpg" alt="screenshot">
+</p>
 
-Start JSON server by entering:
-json-server --watch db.json --port 3001
+<!-- CONTACT -->
+## Contact Me
 
-### `npm test`
+[![Linkedin Badge](https://img.shields.io/badge/-brintonfoyreed-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/brintonfoyreed/)](https://www.linkedin.com/in/brintonfoyreed/) [![Instagram Badge](https://img.shields.io/badge/-nigels_vacation-purple?style=flat-square&logo=instagram&logoColor=white&link=https://www.instagram.com/nigels_vacation/)](https://www.instagram.com/nigels_vacation/) [![Medium Badge](https://img.shields.io/badge/-brintonfoyreed-03a57a?style=flat-square&labelColor=000000&logo=Medium&link=https://brintonfoyreed.medium.com/)](https://brintonfoyreed.medium.com/)[ ![Gmail Badge](https://img.shields.io/badge/-brintonfoyreed@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:brintonfoyreed@gmail.com)](mailto:brintonfoyreed@gmail.com)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Project Link: [Enter the Enneagram](https://enter-the-enneagram.herokuapp.com/)
 
-### `npm run build`
+<a href="https://github.com/bfreed76">
+<strong>See more apps on my profile page »</strong></a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="center">
+<img src="./public/i_screenshot4.jpg" alt="screenshot">
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## To start Enter the Enneagram locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Start the frontend React server in the root directory terminal:
+```
+npm start
+```
+Please note that all quiz questions are provided from a json server on the backend, which must be initialized separately. 
 
-### `npm run eject`
+[Follow backend setup instructions here.](https://github.com/bfreed76/Enter-the_Enneagram_Backend)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Requirements
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- NodeJS (v14 or higher) and NPM
+- chart.js 3.3.0 or higher
+- react-chartjs-2: 3.0.3 or higher
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+See Environment Setup below for instructions on installing these tools if you
+don't already have them.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Environment Setup
 
-## Learn More
+<p align="center">
+<img src="./public/i_screenshot5.jpg" alt="screenshot">
+</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Install NodeJS
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Verify you are running a recent version of Node with:
 
-### Code Splitting
+```sh
+node -v
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+If your Node version is less than 14, update it with:
 
-### Analyzing the Bundle Size
+```sh
+nvm install node
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+You can also update your npm version with:
 
-### Making a Progressive Web App
+```sh
+npm i -g npm
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Install React-Chartjs-2 library with peer dependencies:
 
-### Advanced Configuration
+```bash
+npm install --save react-chartjs-2 chart.js
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+We recommend using `chart.js@^3.0.0`.
 
-### Deployment
+Then, import and use individual components:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```jsx
+import { Doughnut } from 'react-chartjs-2';
 
-### `npm run build` fails to minify
+<Doughnut data={...} />
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Examples
+
+Please see [live examples](https://reactchartjs.github.io/react-chartjs-2/) or their [source code](example).
+
+<p align="center">
+<img src="./public/i_screenshot5.jpg" alt="screenshot">
+</p>
+
+## Please note that this repository contains the frontend for Enter the Enneagram. [The backend can be found here.](https://github.com/bfreed76/Enter-the_Enneagram_Backend)
