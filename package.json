@@ -9,7 +9,6 @@
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^4.6.0",
     "chart.js": "^3.3.0",
-    "json-server": "^0.17.0",
     "node": "^16.10.0",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.0",
@@ -20,7 +19,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start && node server.js",
+    "start": "concurrently \"react-scripts start\" \"npm run json-server\"",
+    "json-server": "json-server --watch db.json --port 3001",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -42,5 +42,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^6.3.0",
+    "json-server": "^0.17.0"
   }
 }
