@@ -16,7 +16,7 @@ class QuestionsContainer extends Component {
 
   //? GETS QUESTION ARRAY
   fetchQuestions = () => {
-    fetch("http://localhost:3001/questions")
+    fetch("https://enter-the-enneagram-backend.herokuapp.com/questions")
       .then((res) => res.json())
       .then((questionsArr) => {
         this.setState({
